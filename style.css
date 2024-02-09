@@ -1,0 +1,129 @@
+:root{
+      --Green:hsl(75, 94%, 57%);
+      --White:hsl(0, 0%, 100%);
+      --Grey:hsl(0, 0%, 20%);
+      --Dark-Grey:hsl(0, 0%, 12%);
+      --Off-Black:hsl(0, 0%, 8%);
+}
+@font-face{
+      font-family: interFont;
+      src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+}
+/* - Weights: 400, 600, 700 */
+
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html{
+      background-color: var(--Dark-Grey);
+      font-family: interFont, sans-serif;
+      font-size: 14px;
+}
+
+body{
+      background-color: var(--Dark-Grey);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+section{
+      background-color: var(--Off-Black);
+      width: 1400px;
+      height: 950px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+main{
+      background-color: var(--Dark-Grey);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+      border-radius: 1rem;
+}
+
+.container{
+      display: block;
+      text-align: center;
+}
+
+img{
+      width: 50%; 
+      border-radius: 50%;
+}
+
+h1{
+      color: var(--White);
+      font-size: 1.7rem;
+      font-weight: 400;
+      margin-top: 1.8rem;
+}
+
+h2{
+      color: var(--Green);
+      font-size: 0.97rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+}
+
+q{
+      color: var(--White);
+      font-weight: 400;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+}
+
+nav{
+      display: grid;
+      align-items: center;
+}
+
+.button{
+      background-color: var(--Grey);
+      color: var(--White);
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 13px 98px;
+      margin-top: 18px;
+      text-align: center;   
+      border-radius: 7px;
+}
+.button:hover{
+      background-color: var(--Green);
+      color: var(--Off-Black);
+      cursor: url(assets/cursor/black-pointer.svg),pointer;
+}
+
+ @media(max-width:1200px){
+
+      section{
+            height: 800px;
+            width: 400px;
+      }
+      main{
+       padding: 1.5rem;  
+      }
+      h2{
+            margin-top: 0.6rem;
+      }
+
+      .button{
+            padding: 13px 85px;
+      }  
+} 
+
+footer { 
+      font-size: 11px; 
+      text-align: center; 
+      color: hsl(228, 45%, 44%);
+ }
